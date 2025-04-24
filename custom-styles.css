@@ -54,9 +54,9 @@ img.image-border {
 .reveal h1 {
     /*thin typewriter font*/
     font-family: "Courier New", monospace, italic;
-    font-size:larger;
+    color: #a3002f; /* Change the color value as needed */
     /*medium weight*/
-    font-weight:300;
+    font-weight:bold;
 }
 
 .reveal h2 {
@@ -216,7 +216,7 @@ color: #1364ba;;
 
 
 red {
-color: #ba1313;
+color: #a3002f;
 }
 
 green {
@@ -226,3 +226,9 @@ color: #13ba5b;
 blue {
 color: #1364ba;;
 }
+
+.right-align {
+    text-align: right;
+    border-right: 3px solid #444;
+    padding-right: 12px;
+  }
