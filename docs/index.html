@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.27">
+
+  <title>KI im Unterricht</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom-styles.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <!-- bring into global scope -->
+  <!-- used it via SVG(). -->
+  <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js"></script>
+  <!-- use it via d3. -->
+  <script src="https://cdn.jsdelivr.net/npm/svg.draggable.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <!-- use it via uid. -->
+  <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.0/dist/umd/uuid.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+  <!-- import as module, use import statement to bring items into scope  -->
+  <script type="module" src="index.js"></script>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">KI im Unterricht</h1>
+  <p class="subtitle"></p><p>Was bedeutet KI für uns und für die Bildung? <br><br> <em>Wolfgang Spahn</em> <br><br> 25.04.2025 <br></p><p></p>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="infos" class="slide level2">
+<h2>Infos</h2>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+<br><br> Zum Starten des Ateliers bitte diesen Link verwenden: <br><br>
+<h2 class="centered-text">
+sebayt.ch/atelier/
+</h2>
+<br> Für Vollbildmodus bitte diesen Button “Fullscreen” klicken oder Taste “F11”. <br><br> <button onclick="goFullScreen()" class="centered-xxl-rounded-button">Fullscreen</button> <br><br>
+<div class="centered-xs-text">
+Server IP:
+<div id="ip-socket" type="showIPSocket">
+
+</div>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="willkommen-im-atelier" class="slide level2">
+<h2>Willkommen im Atelier</h2>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+<div id="team-collection1" type="teamCollection">
+
+</div>
+</section>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Was ist künstliche Intelligenz in 2025? (5min)
+<ul>
+<li>Definition, Kognition, Roboter</li>
+</ul></li>
+<li>Wie funktionieren diese KI Systeme? (30min)
+<ul>
+<li>Mustererkennung(A), Trainingsarten, Verstehen von Worten/Sätzen</li>
+<li>KI ist mehr als Imitation</li>
+<li>GPT ins “Gehirn” geschaut(A)</li>
+</ul></li>
+<li>KI verändert geistiges Arbeiten (10 min)
+<ul>
+<li>KI/Mensch Zusammenarbeit</li>
+<li>ICT Arbeitsmarkt</li>
+<li>körperliche Arbeit als Model der zu erwartenden Transformation für geistige Arbeit?</li>
+</ul></li>
+<li>KI im Schulumfeld (45min)
+<ul>
+<li>Chatbots in der Bildung</li>
+<li>KI bewusste Pädagogik</li>
+<li>AIDu - pädagogische KI-Lernbegleiter</li>
+</ul></li>
+</ul>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="section" class="slide level2">
+<h2>_</h2>
+<p><br><br><br><br></p>
+<div class="centered-xxl-text">
+<p>Was ist künstliche Intelligenz in 2025?</p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="ki---intelligenz" class="slide level2">
+<h2>KI - Intelligenz?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Viele Definitionen für Intelligenz</p>
+<ul>
+<li><strong>Intelligenz (ganzheitlich)</strong> ist die Hauptfunktion des menschlichen Gehirns, um kognitive Funktionen bereitzustellen, die einem Lebewesen das Überleben in einer feindlichen Umgebung ermöglichen.</li>
+<li><strong>Intelligenz (kommerziell)</strong> wird benötigt, um Aufgaben zu erledigen, die von geistigen Arbeitern ausgeführt werden.</li>
+<li>1000 andere: …</li>
+</ul>
+<p><strong>Künstliche Intelligenz</strong></p>
+<ul>
+<li>eine Software kann bis zu einem gewissen Grad geistige Arbeit leisten.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Analogie</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/artificialHeart.webp"></p>
+<figcaption>Ein künstliches Herz ersetzt ein menschliches Herz. Ja/Nein</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Daher spreche ich lieber von cognitive Aufgaben.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="kognition---2025" class="slide level2">
+<h2>Kognition - 2025</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Text</strong> <img data-src="images/ChatGPT.webp" style="border: 1px solid lightgray;;width:70.0%"></p>
+<p><strong>Video</strong> <img data-src="images/ai_dino1.gif" style="width:70.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Bild</strong> <img data-src="images/smart-city-computer-vision-yolov7-deep-learning.webp" style="width:80.0%"></p>
+<p><strong>Sound</strong> <img data-src="images/sound.webp" style="width:70.0%"></p>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Forschung deckt ziemlich alle kognitiven Bereiche ab.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="und-in-kombination" class="slide level2">
+<h2>Und in Kombination?</h2>
+<p>Google DeepMind – Astra Project</p>
+<video width="800" controls="">
+<source src="images/60minAstra.mp4" type="video/mp4">
+</video>
+<div class="small">
+<p>https://deepmind.google/technologies/project-astra/</p>
+</div>
+<aside class="notes">
+<p>CEO: Demis Hassabis</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="humanoide-roboter-2025" class="slide level2">
+<h2>Humanoide Roboter 2025</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/robots at assembly line.webp" style="width:80.0%"> <img data-src="images/robot gets tomato.webp" style="width:80.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/robots in warehouse1.webp" style="width:80.0%"> <img data-src="images/robot is cooking.webp" style="width:80.0%"></p>
+</div><p><img data-src="images/robot hand.gif" class="absolute" style="top: 30%; left: 25%; width: 30%; "></p>
+</div>
+<aside class="notes">
+<ul>
+<li>Diese Roboter werden in Pilotprojekten eingesetzt. Keine Laborübungen.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="was-meint-ihr" class="slide level2">
+<h2>Was meint ihr?</h2>
+<p><br><br></p>
+<p>In 5-10 Jahren sind diese Systeme in unserem Alltag?</p>
+<div id="pollField1" type="pollField">
+
+</div>
+<div class="centered-xxl-text" type="pollPercentage" data-ref="pollField1">
+
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="section-1" class="slide level2">
+<h2>_</h2>
+<p><br><br><br><br></p>
+<div class="centered-xxl-text">
+<p>Wie funktionieren diese KI Systeme?</p>
+</div>
+<!-- --------------------------------------------------- slide A8 ----------------------------------------------------- -->
+</section>
+<section id="mustererkennung-a" class="slide level2">
+<h2>Mustererkennung (A)</h2>
+<div id="svg-mustererkennung" type="mustererkennung">
+
+</div>
+<!-- --------------------------------------------------- slide A9 ----------------------------------------------------- -->
+</section>
+<section id="trainingsarten" class="slide level2">
+<h2>Trainingsarten</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Überwachtes Lernen</strong></p>
+<p>Menschliche Experten klassifizieren/markieren die Daten. Aufgrund dieser Daten wird das Modell trainiert. Aufwendig und teuer.</p>
+<p><img data-src="images/GettyImages-898172160-scaled.webp" style="width:80.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Unüberwachtes Lernen</strong> Das Modell lernt aus den Daten ohne menschliche Eingriffe. Rekonstruiert verrauschte Daten. <a href="https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-2/">source</a></p>
+<p><img data-src="images/Generation-with-Diffusion-Models.webp" style="width:90.0%"></p>
+<p>Findet das nächste Wort/Bild in einer Sequenz. <code>how are [you]</code></p>
+</div></div>
+<!-- --------------------------------------------------- slide A10 ----------------------------------------------------- -->
+</section>
+<section id="wie-versteht-ki-worte" class="slide level2">
+<h2>Wie versteht KI Worte?</h2>
+<ul>
+<li>Ein Wort/Token entspricht einem Zahlen Vektor</li>
+<li>Wort Beziehungen entsprechen Vektor Beziehungen</li>
+</ul>
+
+<img data-src="images/word embedding.webp" style="width:80.0%" class="r-stretch"><p><a href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a></p>
+<!-- --------------------------------------------------- slide A11 ----------------------------------------------------- -->
+</section>
+<section id="mehrdeutigkeit" class="slide level2">
+<h2>Mehrdeutigkeit @!?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Ein Wort, zwei Bedeutungen</strong></p>
+<ul>
+<li>Ein Wort hat zunächst nur eine Bedeutung (embedding).</li>
+<li>Um Text realistisch zu bearbeiten, müssen Worte im Kontext prozessiert werden.</li>
+</ul>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/meaning of bank.png" class="gray-border" style="width:95.0%"></p>
+<figcaption>Beispiel: bank (Geldinstitut), bank (Ufer)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Das Wort im Kontext</strong></p>
+<ul>
+<li>Ein neuronal Netz analysiert die Beziehungen der Worte im Kontext (Satz, Paragraph, Buch)</li>
+<li>Daraus lernt es das wahrscheinlichste Wort vorherzusagen.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/context of bank.png" class="gray-border" style="width:95.0%"></p>
+<figcaption>Beispiel: river, bank</figcaption>
+</figure>
+</div>
+</div></div>
+<!-- --------------------------------------------------- slide A10 ----------------------------------------------------- -->
+</section>
+<section id="wie-versteht-ki-sätze-12" class="slide level2">
+<h2>Wie versteht KI Sätze? 1/2</h2>
+<ul>
+<li>Aus Worten werden Vektoren (embeddings) erzeugt die wiederum von neuronalen Netzen wie LLMs/GPTs interpretiert und zu einem finalen Embeddings (Vektor) umgewandelt werden.</li>
+</ul>
+
+<img data-src="images/sentence_embeddings.webp" style="width:80.0%" class="r-stretch"><p>Aus dem finalen Vektor wird bei GPTs das nächste Wort vorhergesagt, aber auch ein Bild generiert.</p>
+<!-- --------------------------------------------------- slide A10 ----------------------------------------------------- -->
+</section>
+<section id="wie-versteht-ki-sätze-22" class="slide level2">
+<h2>Wie versteht KI Sätze? 2/2</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Steckt in einem Vektor Embedding wirklich eine Bedeutung?</p>
+<ul>
+<li>Vektorrepräsentationen von <strong>kann</strong> in die Ausgangssätze mittels NN zurückverwandeln</li>
+<li>Kombinationen von Vektoren erzeugen sinngemässe die Kombination dieser Sätze</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><video class="glue-ambient-video__container" playsinline="" muted="true" loop="true"> <source src="images/vec2text_demo.mp4" type="video/mp4"> no video support </video></p>
+</div></div>
+<div class="small">
+<p>Language Model Inversion (ICLR 2024), J.X. Morris et.al</p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="large-language-model" class="slide level2">
+<h2>Large Language Model</h2>
+<p>Hat man erstmals ein Netzwerk das ein Wort vorhersagen kann, so wird daraus ein Text wenn man es immer wieder anwendet.</p>
+<ul>
+<li><em>Mir geht es gut und ….</em></li>
+<li><em>Mir geht es gut und [wie] ….</em></li>
+<li><em>Mir geht es gut und wie [geht] ….</em></li>
+<li><em>Mir geht es gut und wie geht [es] ….</em></li>
+<li><em>Mir geht es gut und wie geht es [dir] ….</em></li>
+<li><em>Mir geht es gut und wie geht es dir[.]</em></li>
+</ul>
+<p><strong>Und das funktioniert erstaunlich gut.</strong></p>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="llms-emergente-fähigkeiten" class="slide level2">
+<h2>LLMs: emergente Fähigkeiten</h2>
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+<img data-src="images/LLMEmergentCapabilites.gif" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption">Modelle zeigen überraschende Eigenschaften die unvorhersehbar auftauchen</p></section>
+<section id="llms-entitäten" class="slide level2">
+<h2>LLMs: Entitäten?</h2>
+<p>LLMs speichern Entitäten unabhängig von der Sprache. Entitäten sind lokalisierbar und können manipuliert werden.</p>
+
+<img data-src="images/semantic_features_anthropic.png" style="width:80.0%" class="r-stretch"><div class="small">
+<p>https://transformer-circuits.pub/2024/scaling-monosemanticity/</p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="llms-abstrakte-konzepte" class="slide level2">
+<h2>LLMs: abstrakte Konzepte?</h2>
+<p>Auch abstrakte Konzepte können im LLM lokalisiert und manipuliert werden.</p>
+
+<img data-src="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ed11fc0fba655a120823b8272377554bc57529da08537d3dee559096d35997fb/jihvovtrwche957zc6aq.png" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption"><strong>Beispiel</strong>: Anwesenheit eines Konzepts in einem Text markiert mit rot.</p><div class="small">
+<p>https://transformer-circuits.pub/2024/scaling-monosemanticity/</p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="text---embedding---bild" class="slide level2">
+<h2>Text -&gt; Embedding -&gt; Bild</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Prompt</strong>: Bitte zeichne ein Bild von einem Dinosaurier, der auf einem Skateboard fährt, im Stil von Dalis “The Burning Giraffe”.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/the_burning_giraffe.webp" style="width:30.0%"></p>
+<figcaption>Features?</figcaption>
+</figure>
+</div>
+<div id="inputField4" type="inputField">
+
+</div>
+</div><div class="column" style="width:50%;">
+<div type="inputCollection" data-ref="inputField4" data-argconfig="{ &quot;width&quot;: 500, &quot;height&quot;: 400, &quot;hidden&quot;: false }">
+
+</div>
+</div></div>
+<ul>
+<li><a href="https://chatgpt.com/?oai-dm=1&amp;model=gpt-4o">GPT 4o</a></li>
+</ul>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="ki-ins-gehirn-geschaut" class="slide level2">
+<h2>KI ins “Gehirn” geschaut</h2>
+<p><img data-src="images/LLMMathThoughts.webp"></p>
+<p><img data-src="images/LLMMathThoughts1.webp" class="absolute fragment" style="border: 1px solid lightgray;top: 100px; left: 700px; width: 30%; "></p>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="wie-kann-das-sein" class="slide level2">
+<h2>Wie kann das sein?</h2>
+<p>LLMs „denken“ nicht wie Menschen, sondern sie <strong>verdichten</strong> Informationen.</p>
+<p><strong>Cognitive Fähigkeiten als Nebenprodukt des Trainings</strong>:</p>
+<ul>
+<li>Neue cognitive Fähigkeiten erscheinen unvorhersehbar mit zunehmender Größe des Modells</li>
+<li>Auf vielen Gebieten erreichen LLMs menschliches Niveau</li>
+</ul>
+<p><strong>Verdichtung führt zu “echten” kognitiven Fähigkeiten</strong>:</p>
+<ul>
+<li>Stelle sehr großer Sprachmengen mit möglichst wenigen Parametern dar</li>
+<li>Verhindere einfaches Merken, fördere Generalisieren</li>
+</ul>
+<p><strong>Auswirkungen</strong></p>
+<ul>
+<li><strong>Neuronale Netze müssen nach Strukturen, Mustern, Abstraktionen und Verallgemeinerungen suchen</strong></li>
+<li><strong>Je besser diese Komprimierung je grösser das Model, desto „intelligenter“ agieren die LLMs</strong></li>
+</ul>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="kis-sind-schlau-und-doof-zugleich" class="slide level2">
+<h2>KIs sind schlau und doof zugleich</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>How many Rs are in Strawberry?</p>
+<div id="inputField5" type="inputField">
+
+</div>
+<p>Und was sagen die KI Modelle?</p>
+<ul>
+<li><a href="https://chatgpt.com/?oai-dm=1&amp;model=gpt-4o-mini">GPT 4o mini</a></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div type="inputCollection" data-ref="inputField5" data-argconfig="{ &quot;width&quot;: 500, &quot;height&quot;: 400, &quot;hidden&quot;: false }">
+
+</div>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="llms-gehirn" class="slide level2">
+<h2>LLMs &lt;&gt; Gehirn?</h2>
+<video class="glue-ambient-video__container" playsinline="" muted="true" loop="true" style="width: 80%;">
+<source src="https://storage.googleapis.com/gweb-research2023-media/media/PITOM1_Comprehension.mp4" type="video/mp4">
+</video>
+<div class="centered-content">
+<p><em>This study shows that neural activity in the</em> <strong><em>human brain aligns linearly</em></strong> <em>with the internal contextual embeddings of speech and language within</em> <strong><em>large language models (LLMs)</em></strong> <em>as they process everyday conversations.</em></p>
+</div>
+<div class="small">
+<p>Nature Human Behaviour - 2025/03/07 - Goldstone, A., et al.&nbsp;- A unified acoustic-to-speech-to-language embedding space captures the neural basis of natural language processing in everyday conversations</p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="hat-das-euer-verständnis-von-ki-verändert" class="slide level2">
+<h2>Hat das Euer Verständnis von KI verändert?</h2>
+<p><br><br></p>
+<p>Ja, vorher hatte ich eine andere Sicht auf KI?</p>
+<div id="pollField2" type="pollField">
+
+</div>
+<div class="centered-xxl-text" type="pollPercentage" data-ref="pollField2">
+
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="section-2" class="slide level2">
+<h2>_</h2>
+<p><br><br><br><br></p>
+<div class="centered-xxl-text">
+<p>KI verändert geistiges Arbeiten</p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="erste-untersuchungen-über-kimensch-zusammenarbeit" class="slide level2">
+<h2>Erste Untersuchungen über KI/Mensch Zusammenarbeit</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>758 consultants</p>
+<p><img data-src="images/havardBusinessSchool.webp" class="image-border" style="width:50.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>4867 software developers</p>
+<p><img data-src="images/High skilled work AI.webp" class="image-border" style="width:50.0%"></p>
+</div></div>
+<p>sehen 25-40% Zunahme der Produktivität: skales with detached (-), delegating (+) or immersive usage (++)</p>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="ki-in-der-forschung" class="slide level2">
+<h2>KI in der Forschung</h2>
+<div class="small">
+<p>Ein Team von Wissenschaftlern hat eine <strong>chemische KI</strong> entwickelt, die in der Lage ist, <strong>Moleküle zu entwerfen</strong>, die auf dem Mars Sauerstoff produzieren könnten. Dazu hat sie Marsproben analysiert und zerlegt, mehr als <strong>3,7 Millionen mögliche Moleküle</strong> für die Spaltung von Wasser und die Bildung von Sauerstoff auf dem Roten Planeten <strong>identifiziert</strong> und die <strong>234 besten Kandidaten durch Synthese charakterisiert</strong>. Dies würde etwa <strong>2.000 Jahre menschlicher Arbeit</strong> erfordern, schreiben die Autoren der Studie.</p>
+</div>
+<div class="centered-content">
+<iframe width="730" height="410" src="https://www.youtube.com/embed/KsBveF-PwAY" title="Research Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+<div class="small">
+<p>University of Science and Technology of China</p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="ict-arbeitsmarkt" class="slide level2">
+<h2>ICT Arbeitsmarkt</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><strong>Nicole Helmer</strong>, Vice President &amp; Global Head of Development Learning bei <strong>SAP</strong></p>
+<p><em>Neben dem unbestreitbaren Bedarf an einer verantwortungsvollen KI-Entwicklung und einer breiten KI-Kompetenz in sämtlichen IT-Berufen müssen</em> <strong><em>alle Mitarbeitenden</em></strong> ihre übergeordneten Fähigkeiten wie <strong><em>kritisches Denken, Kreativität und komplexes Problemlösen verbessern.</em></strong></p>
+</div><div class="column small" style="width:40%;">
+<p><br> <img data-src="images/ICT Job impact.png" style="width:80.0%"></p>
+</div></div>
+<div class="small">
+<p><em>Study: “The Transformational Opportunity of AI on ICT Jobs”: Accenture,</em> <strong><em>Cisco</em></strong>, <em>Eightfold, Google, IBM, Indeed, Intel, Microsoft and SAP.</em></p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="freelancer-market" class="slide level2">
+<h2>Freelancer Market</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<p><br></p>
+<p><strong>Harvard Business Review</strong>: Research: How Gen AI Is Already Impacting the Labor Markets</p>
+<p>After the introduction of ChatGPT, there was a 21% decrease in the weekly number of posts in automation-prone jobs compared to manual-intensive jobs. <strong>Writing jobs were affected the most</strong> (30.37% decrease), followed by software, app, and web development (20.62%) and engineering (10.42%).</p>
+</div><div class="column" style="width:35%;">
+<p><img data-src="images/ZHU_AI_AUTOMATION_JOBS.png" style="width:80.0%"></p>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="körperliche-arbeit" class="slide level2">
+<h2>körperliche Arbeit</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>1900</strong></p>
+<p><img data-src="images/1900_landwirtschaf_1.webp" style="width:75.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>2024</strong></p>
+<p><img data-src="images/claas mähdrescher.webp" style="width:100.0%"></p>
+</div></div>
+<p>als Model der zu erwartenden Transformation für geistige Arbeit?</p>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="eure-gedankenbemerkungen" class="slide level2">
+<h2>Eure Gedanken/Bemerkungen</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Wie verändert sich die Arbeit in den nächsten 10 Jahren? Eure Vorhersagen?</p>
+<div id="inputField6" type="inputField">
+
+</div>
+</div><div class="column" style="width:60%;">
+<div type="inputCollection" data-ref="inputField6" data-argconfig="{ &quot;width&quot;: 500, &quot;height&quot;: 400, &quot;hidden&quot;: false }">
+
+</div>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="section-3" class="slide level2">
+<h2>_</h2>
+<p><br><br><br><br></p>
+<div class="centered-xxl-text">
+<p>KI im Schulumfeld</p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="chatbots-in-der-bildung" class="slide level2">
+<h2>Chatbots in der Bildung</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="images/2847_cartoon_back_to_school_1.webp" style="width:100.0%"> <a href="https://www.prpeak.com/opinion/cartoon-homework-assignments-7489368">Source</a></p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/bidt-logo-500x79.png" style="width:80.0%"></p>
+<div class="small">
+<p><em>“… unter den untersuchten Schülerinnen und Schülern 73 % [haben] 73 % bereits generative KI für die Text- und/oder Bildgenerierung genutzt.”</em></p>
+<p><a href="https://www.bidt.digital/publikation/verbreitung-und-akzeptanz-generativer-ki-an-schulen-und-hochschulen/">BIDT: März 2024</a></p>
+<p><img data-src="images/VALS-ASLA.png" style="width:10.0%"></p>
+<p>“<em>…. Auch</em> <strong><em>konkrete Unterrichtskonzepte und -materialien</em></strong> <em>für die Thematisierung der Toolnutzung sind gefragt. Die Ergebnisse dieser</em> <strong>Studie [über Deepl/LEO Nutzung]</strong> <em>legen nahe, dass es sinnvoll wäre, die Lernenden dieser Stufe im kritischen Umgang mit Übersetzungstools zu schulen, um sie gewinnbringender und lernförderlicher in der fremdsprachigen Kommunikation einzusetzen.</em>”</p>
+<p><a href="https://www.researchgate.net/publication/359400026_Digitale_Ubersetzungstools_im_Fremdsprachenunterricht_der_Sekundarstufe_I_Nutzung_von_DeepL_und_LEO_aus_der_Sicht_von_Lernenden_am_Beispiel_einer_Schreibaufgabe">Bulletin Suisse de Linguistique Appliquee</a></p>
+</div>
+</div></div>
+<!-- @article{article,
+author = {Perrin, Raphaël and Wild, Sandrine and Ferris Diederich, Catherine and Grimm, Linda},
+year = {2021},
+month = {12},
+pages = {113-129},
+title = {Digitale Übersetzungstools im Fremdsprachenunterricht der Sekundarstufe I: Nutzung von DeepL und LEO aus der Sicht von Lernenden am Beispiel einer Schreibaufgabe},
+journal = {Bulletin Suisse de Linguistique Appliquee}
+} -->
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="ki-bots-im-schulumfeld" class="slide level2">
+<h2>KI Bots im Schulumfeld</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Vergleichsstudie an 1000 Lernenden:</p>
+<p>Prüfungsvorbereitung mit und ohne KI Chatbots</p>
+<ul>
+<li>Unterschiedliche Hausaufgaben zur Mathe Prüfungsvorbereitung
+<ul>
+<li>Gruppe 1: Basis - traditionell</li>
+<li>Gruppe 2: +48% - ChatGPT</li>
+<li>Gruppe 3: +127% - einfacher sokratischer GPT-Tutor (nicht adaptiv)</li>
+</ul></li>
+<li>Prüfung über den Lernstoff
+<ul>
+<li><strong>ChatGPT Gruppen sind schlechter</strong> als die traditionelle Gruppe</li>
+<li>GTP-Tutor Gruppe erzielt gleiche Ergebnisse wie die traditionelle Gruppe</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/AI harm learning.webp" class="image-border" style="width:70.0%"></p>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="studentinnen-ki" class="slide level2">
+<h2>Student:innen &amp; KI?</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 0.8em;">
+<p><strong>Anthropic Education Report</strong>: How University Students Use Claude AI</p>
+</div>
+<div style="font-size: 0.6em;">
+<p>Students primarily use AI systems for <strong>creating</strong> (using information to learn something new) and <strong>analyzing</strong> (taking apart the known and identifying relationships), such as creating coding projects or analyzing law concepts. This aligns with <strong>higher-order cognitive functions</strong> on Bloom’s Taxonomy.</p>
+<strong>This raises questions about ensuring students don’t offload critical cognitive tasks to AI systems.</strong>
+<p>
+</p>
+</div>
+<div class="right-align" style="margin-top: 5em; font-size: 0.5em;">
+<p><em>Comparing the percentage of Claude.ai student conversations that are related to an National Center for Education Statistics in 1 Mio dialogues.</em></p>
+</div>
+</div><div class="column" style="width:60%;">
+<p><img data-src="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd22ea4cc33c603b51435e334c4311ffc5b1d7f5a-2400x1818.png&amp;w=3840&amp;q=75"></p>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="ki-nutzung" class="slide level2">
+<h2>KI Nutzung</h2>
+<p>Mit KI können wir auf sehr unterschiedliche Weise umgehen.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Lernende können:</p>
+<ul>
+<li><strong>Sich Bilden</strong>: Sie <green> erzeugen auf Augenhöhe</green> zusammen mit KI neue Inhalte und Ideen und bauen so <strong>Kompetenzen</strong> auf</li>
+<li><strong>Optimieren</strong>: Sie <blue> automatisieren</blue> den Umgang mit Information/Wissen mithilfe von KI</li>
+<li><strong>Reproduzieren</strong>: Sie <red>übernehmen KI</red> generierte Inhalte ohne dass sie diese verstehen oder hinterfragen</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/KINutzen.svg" style="width:100.0%"></p>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="ki-bewusste-pädagogik" class="slide level2">
+<h2>KI bewusste Pädagogik</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><strong>Es braucht Methodik um die Vorteile von KI pädagogisch zu nutzen. KI: </strong></p>
+<ul>
+<li>bringt Kapazität für <span class="blue"><strong>individuelle Förderung</strong></span></li>
+<li>ermöglicht Schöpfungstiefe durch <span class="blue"><strong>komplexere Aufgabenstellungen</strong></span></li>
+<li>fördert Durchdringung durch direkten <span class="blue"><strong>Start an der Kompetenzgrenze</strong></span></li>
+<li>zielt auf tiefes Wissen durch <span class="blue"><strong>Vernetzung von Wissen und Kompetenzen</strong></span></li>
+<li>motiviert durch lebensnahes, <span class="blue"><strong>exploratives Lernen</strong></span> von komplexen Zusammenhängen</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/explorer_education1.webp" style="width:100.0%"></p>
+<figcaption>DALL·E 3: Education as Exploration</figcaption>
+</figure>
+</div>
+</div></div>
+<p><strong>Das bedeutet eine enge Lernbegleitung durch Lehrpersonen und Tools</strong></p>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="ansprüche-21-jahrhundert" class="slide level2">
+<h2>Ansprüche 21 Jahrhundert</h2>
+<p><strong>Der Kompetenzbegriff nach Weinert</strong></p>
+<div class="centered-content">
+<p>Kompetenzen bezeichnen „<em>die bei Individuen verfügbaren oder durch sie erlernbaren kognitiven Fähigkeiten und Fertigkeiten, um bestimmte</em> <strong><em>Probleme zu lösen</em></strong>, <em>sowie die damit verbundenen …</em> <strong><em>Bereitschaften</em></strong>, <em>damit die Problemlösungen in</em> <strong>variablen Situationen</strong> <em>erfolgreich und verantwortungsvoll genutzt werden können.</em>“</p>
+</div>
+<p><br><br><br><br><br></p>
+<div class="small">
+<p>Quelle: Weinert (Hrsg.) Leistungsmessungen in Schulen; 2001</p>
+</div>
+<!--
+
+**Moderne Pädagogik strebt nach**:
+
+  - nachhaltiges, transferfähiges Können
+  - Verfügbarkeit in komplexen, authentischen Situationen 
+  - Fähigkeit zur Anwendung über die Zeit hinweg 
+
+***KI sollte fördern durch*** *motivierende* ***Lerndialoge*** *wo Lernende* ***akkumulierte Kompetenzen*** *erwerben deren Verankerung sie in* ***simulierten aber authentischen Erfahrungsräumen/Lernsituationen*** *mit ganzheitlichen Anforderungen überprüfen und vertiefen*
+-->
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="welche-ki-lernsituationen" class="slide level2">
+<h2>Welche KI Lernsituationen?</h2>
+<p>Eine individuelle KI unterstütze Lernsituation kreiert intrinsische Motivation bei den Lernenden, Kompetenzen aufzubauen und zu erproben, und nicht diese zu simulieren.</p>
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+<img data-src="images/Flightdeck-1-Flugstunde-Airbus-A320.jpg" class="r-stretch quarto-figure-center"><p class="caption">AFS Flugagentur - Leipzig - Markranstädt - Flugsimulator - Airbus A320 - Professional</p></section>
+<section id="kurvendiskussion-mit-ki" class="slide level2">
+<h2>Kurvendiskussion mit KI</h2>
+<p><strong>Workshop mit 9. Klässlern</strong></p>
+<p>Aufgabe nach kurzer Einführung in prompt engineering:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Prompt:</strong> Bitte gib mir den Matplotlib code um die function y = x³-3x²-9x+27 zu zeichnen. Verwende das Canvas.</p>
+<ul>
+<li>Und nun beginne einen Dialog über Nullstellen, Extrema, Wendepunkte, … .</li>
+<li>Frage die KI nach was die obigen Begriffe bedeuten.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Kurvendiskussion1.png" style="width:80.0%"></p>
+</div></div>
+<ul>
+<li><a href="https://chatgpt.com/?oai-dm=1&amp;model=gpt-4o">GPT 4o</a></li>
+</ul>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="wir-zeichnen-ein-comic" class="slide level2">
+<h2>Wir zeichnen ein Comic</h2>
+<p><strong>Workshop mit 11. und 12. Klässlern</strong></p>
+<p>Nach einer kurzen Einführung in Prompting fürs Comiczeichnen:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Comic Zeichnen ist richtig aufwendig. ChatGPT kann uns dabei helfen. Die Story muss aber von uns kommen.</p>
+<ul>
+<li><strong>Storyline</strong>: Die Geschichte in einem Satz.</li>
+<li><strong>Storyboard</strong>: Wie sieht die Geschichte aus?</li>
+<li><strong>Bildbeschreibung</strong>: Was ist auf den einzelnen Bildern zu sehen? Was passiert wenn Du Details weglässt?</li>
+<li><strong>Dialoge</strong>: Was sagen die Figuren?</li>
+<li><strong>Zeichnungen</strong>: Zeichne die Bilder.</li>
+<li><strong>Zusammenfügen</strong>: In einem Graphikprogramm: füge die Bilder und Dialoge zusammen.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/comic.webp" style="width:70.0%"></p>
+<figcaption>Was kann man hier besser machen?</figcaption>
+</figure>
+</div>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="aidu-lernbegleitung-12" class="slide level2">
+<h2>AIDu-Lernbegleitung 1/2</h2>
+<p>Erste Experimente mit 10-12 Klässlern: Allg., Geschichte, Französisch und Physik</p>
+<p><img data-src="images/AIdu.webp" style="width:90.0%"> <img data-src="images/AIDu Welcome.webp" class="absolute" style="border: 1px solid gray;top: 370px; left: 300px; width: 40%; "> <img data-src="images/AIDu Isaac.webp" class="absolute" style="border: 1px solid gray;top: 360px; left: 500px; width: 40%; "></p>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="aidu-lernbegleitung-22" class="slide level2">
+<h2>AIDu-Lernbegleitung 2/2</h2>
+<p><strong>AIDu - pädagogische KI-Lernbegleitung</strong></p>
+<p>Forschungsfragen:</p>
+<ul>
+<li>Lernende sind per se keine kompetente KI Dialogpartner. Wie damit umgehen?</li>
+<li>Wie verankern wir Kompetenzen und messen das?</li>
+<li>Wie ermöglichen wir erlebte Selbstwirksamkeit?</li>
+<li>Wie geben wir Gestaltungsspielraum für Lernende und Lehrende?</li>
+<li>Abgrenzung zu Chatbots, die nur Informationen liefern</li>
+</ul>
+<p>Kombination von virtuellen Erfahrungsräumen mit KI Lernbegleitung. Dabei begleiten wir die Lernenden in der Erarbeitung von Kompetenzen.</p>
+<p><a href="https://sebayt.ch/aidu/">Link</a></p>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="zusammenfassung" class="slide level2">
+<h2>Zusammenfassung</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>KI hat das Potential die Bildung zu revolutionieren
+<ul>
+<li>oder zu ruinieren</li>
+</ul></li>
+<li>KI Chatbots im Schulumfeld sind Realität
+<ul>
+<li>und werden heute (falsch?) genutzt</li>
+</ul></li>
+<li>KI bewusste Pädagogik
+<ul>
+<li>ist aus unserer Sicht notwendig</li>
+</ul></li>
+<li>KI Lernsysteme können dabei
+<ul>
+<li>die nötigen Resourcen bieten</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/explorer_education1.webp" style="width:80.0%"></p>
+<figcaption>DALL·E 3: Education as Exploration</figcaption>
+</figure>
+</div>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="please_vote_id" class="slide level2">
+<h2>_</h2>
+<p><br><br><br><br></p>
+<div class="centered-xxl-text">
+<p><em>-</em> Danke für die Aufmerksamkeit <em>-</em> <br> <a href="https://wolfgangspahn.github.io/intro-IS2-KI-research.github.io">&gt;/</a></p>
+</div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="was-ist-das-problem" class="slide level2">
+<h2>Was ist das Problem?</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><strong>KI im Schulumfeld ist per se nicht förderlich</strong></p>
+<ul>
+<li>KI Technologie <span class="red"><strong>reduziert Durchdringung</strong></span>
+<ul>
+<li>verleitet zu <span class="red"><strong>Kompetenzsimulation</strong></span></li>
+<li><span class="red"><strong>reduziert die Notwendigkeit von Wissen</strong></span> durch schnelle Verfügbarkeit von Information</li>
+</ul></li>
+<li><span class="red"><strong>Miss- und Fehlinformation</strong></span> sind leichter verfüg-/erzeugbar</li>
+<li>ChatBots verführen zu <span class="red"><strong>Plagiat und Betrug</strong></span></li>
+<li>Führt zur <span class="red"><strong>fehlerhaften Selbsteinschätzung</strong></span> der eigenen Kompetenz</li>
+</ul>
+<p>Aber KI ist Realität. Daher ist <strong>Wegschauen ist keine Lösung</strong>!</p>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/consumer_education1.webp" style="width:100.0%"></p>
+<figcaption>DALL·E 3: Consumer Education</figcaption>
+</figure>
+</div>
+</div></div>
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+</section>
+<section id="sprach-ki-ist-etabliert" class="slide level2">
+<h2>Sprach-KI ist etabliert</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>OpenAI hat über 300 Mio wöchentliche Nutzer weltweit. Schweiz:</p>
+<p><img data-src="images/igem_digimonitor_w960_h620.jpg" style="width:100.0%"></p>
+</div><div class="column fragment" style="width:40%;">
+<div class="small">
+<p><br><br> <em>DALL·E 3</em>: Social Media Rabbit Hole an AI Application</p>
+</div>
+<p><img data-src="images/social_media_rabbit_hole.webp" class="image-border" style="width:87.0%"></p>
+</div></div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/myLogo.svg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Dr.&nbsp;Wolfgang Spahn</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

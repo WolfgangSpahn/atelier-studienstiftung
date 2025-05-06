@@ -1,0 +1,345 @@
+[
+  {
+    "objectID": "index.html#infos",
+    "href": "index.html#infos",
+    "title": "KI im Unterricht",
+    "section": "Infos",
+    "text": "Infos\n\n Zum Starten des Ateliers bitte diesen Link verwenden: \n\nsebayt.ch/atelier/\n\n Für Vollbildmodus bitte diesen Button “Fullscreen” klicken oder Taste “F11”.  Fullscreen \n\nServer IP:"
+  },
+  {
+    "objectID": "index.html#willkommen-im-atelier",
+    "href": "index.html#willkommen-im-atelier",
+    "title": "KI im Unterricht",
+    "section": "Willkommen im Atelier",
+    "text": "Willkommen im Atelier"
+  },
+  {
+    "objectID": "index.html#agenda",
+    "href": "index.html#agenda",
+    "title": "KI im Unterricht",
+    "section": "Agenda",
+    "text": "Agenda\n\nWas ist künstliche Intelligenz in 2025? (5min)\n\nDefinition, Kognition, Roboter\n\nWie funktionieren diese KI Systeme? (30min)\n\nMustererkennung(A), Trainingsarten, Verstehen von Worten/Sätzen\nKI ist mehr als Imitation\nGPT ins “Gehirn” geschaut(A)\n\nKI verändert geistiges Arbeiten (10 min)\n\nKI/Mensch Zusammenarbeit\nICT Arbeitsmarkt\nkörperliche Arbeit als Model der zu erwartenden Transformation für geistige Arbeit?\n\nKI im Schulumfeld (45min)\n\nChatbots in der Bildung\nKI bewusste Pädagogik\nAIDu - pädagogische KI-Lernbegleiter"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "KI im Unterricht",
+    "section": "_",
+    "text": "_\n\n\nWas ist künstliche Intelligenz in 2025?"
+  },
+  {
+    "objectID": "index.html#ki---intelligenz",
+    "href": "index.html#ki---intelligenz",
+    "title": "KI im Unterricht",
+    "section": "KI - Intelligenz?",
+    "text": "KI - Intelligenz?\n\n\nViele Definitionen für Intelligenz\n\nIntelligenz (ganzheitlich) ist die Hauptfunktion des menschlichen Gehirns, um kognitive Funktionen bereitzustellen, die einem Lebewesen das Überleben in einer feindlichen Umgebung ermöglichen.\nIntelligenz (kommerziell) wird benötigt, um Aufgaben zu erledigen, die von geistigen Arbeitern ausgeführt werden.\n1000 andere: …\n\nKünstliche Intelligenz\n\neine Software kann bis zu einem gewissen Grad geistige Arbeit leisten.\n\n\nAnalogie\n\n\n\nEin künstliches Herz ersetzt ein menschliches Herz. Ja/Nein\n\n\n\n\n\nDaher spreche ich lieber von cognitive Aufgaben."
+  },
+  {
+    "objectID": "index.html#kognition---2025",
+    "href": "index.html#kognition---2025",
+    "title": "KI im Unterricht",
+    "section": "Kognition - 2025",
+    "text": "Kognition - 2025\n\n\nText \nVideo \n\nBild \nSound \n\n\n\nForschung deckt ziemlich alle kognitiven Bereiche ab."
+  },
+  {
+    "objectID": "index.html#und-in-kombination",
+    "href": "index.html#und-in-kombination",
+    "title": "KI im Unterricht",
+    "section": "Und in Kombination?",
+    "text": "Und in Kombination?\nGoogle DeepMind – Astra Project\n\n\n\n\nhttps://deepmind.google/technologies/project-astra/\n\n\nCEO: Demis Hassabis"
+  },
+  {
+    "objectID": "index.html#humanoide-roboter-2025",
+    "href": "index.html#humanoide-roboter-2025",
+    "title": "KI im Unterricht",
+    "section": "Humanoide Roboter 2025",
+    "text": "Humanoide Roboter 2025\n\n\n \n\n \n\n\n\n\nDiese Roboter werden in Pilotprojekten eingesetzt. Keine Laborübungen."
+  },
+  {
+    "objectID": "index.html#was-meint-ihr",
+    "href": "index.html#was-meint-ihr",
+    "title": "KI im Unterricht",
+    "section": "Was meint ihr?",
+    "text": "Was meint ihr?\n\nIn 5-10 Jahren sind diese Systeme in unserem Alltag?"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "KI im Unterricht",
+    "section": "_",
+    "text": "_\n\n\nWie funktionieren diese KI Systeme?"
+  },
+  {
+    "objectID": "index.html#mustererkennung-a",
+    "href": "index.html#mustererkennung-a",
+    "title": "KI im Unterricht",
+    "section": "Mustererkennung (A)",
+    "text": "Mustererkennung (A)"
+  },
+  {
+    "objectID": "index.html#trainingsarten",
+    "href": "index.html#trainingsarten",
+    "title": "KI im Unterricht",
+    "section": "Trainingsarten",
+    "text": "Trainingsarten\n\n\nÜberwachtes Lernen\nMenschliche Experten klassifizieren/markieren die Daten. Aufgrund dieser Daten wird das Modell trainiert. Aufwendig und teuer.\n\n\nUnüberwachtes Lernen Das Modell lernt aus den Daten ohne menschliche Eingriffe. Rekonstruiert verrauschte Daten. source\n\nFindet das nächste Wort/Bild in einer Sequenz. how are [you]"
+  },
+  {
+    "objectID": "index.html#wie-versteht-ki-worte",
+    "href": "index.html#wie-versteht-ki-worte",
+    "title": "KI im Unterricht",
+    "section": "Wie versteht KI Worte?",
+    "text": "Wie versteht KI Worte?\n\nEin Wort/Token entspricht einem Zahlen Vektor\nWort Beziehungen entsprechen Vektor Beziehungen\n\n\nOpenAI Tokenizer"
+  },
+  {
+    "objectID": "index.html#mehrdeutigkeit",
+    "href": "index.html#mehrdeutigkeit",
+    "title": "KI im Unterricht",
+    "section": "Mehrdeutigkeit @!?",
+    "text": "Mehrdeutigkeit @!?\n\n\nEin Wort, zwei Bedeutungen\n\nEin Wort hat zunächst nur eine Bedeutung (embedding).\nUm Text realistisch zu bearbeiten, müssen Worte im Kontext prozessiert werden.\n\n\n\n\n\nBeispiel: bank (Geldinstitut), bank (Ufer)\n\n\n\nDas Wort im Kontext\n\nEin neuronal Netz analysiert die Beziehungen der Worte im Kontext (Satz, Paragraph, Buch)\nDaraus lernt es das wahrscheinlichste Wort vorherzusagen.\n\n\n\n\nBeispiel: river, bank"
+  },
+  {
+    "objectID": "index.html#wie-versteht-ki-sätze-12",
+    "href": "index.html#wie-versteht-ki-sätze-12",
+    "title": "KI im Unterricht",
+    "section": "Wie versteht KI Sätze? 1/2",
+    "text": "Wie versteht KI Sätze? 1/2\n\nAus Worten werden Vektoren (embeddings) erzeugt die wiederum von neuronalen Netzen wie LLMs/GPTs interpretiert und zu einem finalen Embeddings (Vektor) umgewandelt werden.\n\n\nAus dem finalen Vektor wird bei GPTs das nächste Wort vorhergesagt, aber auch ein Bild generiert."
+  },
+  {
+    "objectID": "index.html#wie-versteht-ki-sätze-22",
+    "href": "index.html#wie-versteht-ki-sätze-22",
+    "title": "KI im Unterricht",
+    "section": "Wie versteht KI Sätze? 2/2",
+    "text": "Wie versteht KI Sätze? 2/2\n\n\nSteckt in einem Vektor Embedding wirklich eine Bedeutung?\n\nVektorrepräsentationen von kann in die Ausgangssätze mittels NN zurückverwandeln\nKombinationen von Vektoren erzeugen sinngemässe die Kombination dieser Sätze\n\n\n  no video support \n\n\nLanguage Model Inversion (ICLR 2024), J.X. Morris et.al"
+  },
+  {
+    "objectID": "index.html#large-language-model",
+    "href": "index.html#large-language-model",
+    "title": "KI im Unterricht",
+    "section": "Large Language Model",
+    "text": "Large Language Model\nHat man erstmals ein Netzwerk das ein Wort vorhersagen kann, so wird daraus ein Text wenn man es immer wieder anwendet.\n\nMir geht es gut und ….\nMir geht es gut und [wie] ….\nMir geht es gut und wie [geht] ….\nMir geht es gut und wie geht [es] ….\nMir geht es gut und wie geht es [dir] ….\nMir geht es gut und wie geht es dir[.]\n\nUnd das funktioniert erstaunlich gut."
+  },
+  {
+    "objectID": "index.html#llms-emergente-fähigkeiten",
+    "href": "index.html#llms-emergente-fähigkeiten",
+    "title": "KI im Unterricht",
+    "section": "LLMs: emergente Fähigkeiten",
+    "text": "LLMs: emergente Fähigkeiten\n\n\nModelle zeigen überraschende Eigenschaften die unvorhersehbar auftauchen"
+  },
+  {
+    "objectID": "index.html#llms-entitäten",
+    "href": "index.html#llms-entitäten",
+    "title": "KI im Unterricht",
+    "section": "LLMs: Entitäten?",
+    "text": "LLMs: Entitäten?\nLLMs speichern Entitäten unabhängig von der Sprache. Entitäten sind lokalisierbar und können manipuliert werden.\n\n\nhttps://transformer-circuits.pub/2024/scaling-monosemanticity/"
+  },
+  {
+    "objectID": "index.html#llms-abstrakte-konzepte",
+    "href": "index.html#llms-abstrakte-konzepte",
+    "title": "KI im Unterricht",
+    "section": "LLMs: abstrakte Konzepte?",
+    "text": "LLMs: abstrakte Konzepte?\nAuch abstrakte Konzepte können im LLM lokalisiert und manipuliert werden.\n\nBeispiel: Anwesenheit eines Konzepts in einem Text markiert mit rot.\nhttps://transformer-circuits.pub/2024/scaling-monosemanticity/"
+  },
+  {
+    "objectID": "index.html#text---embedding---bild",
+    "href": "index.html#text---embedding---bild",
+    "title": "KI im Unterricht",
+    "section": "Text -> Embedding -> Bild",
+    "text": "Text -&gt; Embedding -&gt; Bild\n\n\n\nPrompt: Bitte zeichne ein Bild von einem Dinosaurier, der auf einem Skateboard fährt, im Stil von Dalis “The Burning Giraffe”.\n\n\n\n\nFeatures?\n\n\n\n\n\n\n\n\n\n\n\nGPT 4o"
+  },
+  {
+    "objectID": "index.html#ki-ins-gehirn-geschaut",
+    "href": "index.html#ki-ins-gehirn-geschaut",
+    "title": "KI im Unterricht",
+    "section": "KI ins “Gehirn” geschaut",
+    "text": "KI ins “Gehirn” geschaut"
+  },
+  {
+    "objectID": "index.html#wie-kann-das-sein",
+    "href": "index.html#wie-kann-das-sein",
+    "title": "KI im Unterricht",
+    "section": "Wie kann das sein?",
+    "text": "Wie kann das sein?\nLLMs „denken“ nicht wie Menschen, sondern sie verdichten Informationen.\nCognitive Fähigkeiten als Nebenprodukt des Trainings:\n\nNeue cognitive Fähigkeiten erscheinen unvorhersehbar mit zunehmender Größe des Modells\nAuf vielen Gebieten erreichen LLMs menschliches Niveau\n\nVerdichtung führt zu “echten” kognitiven Fähigkeiten:\n\nStelle sehr großer Sprachmengen mit möglichst wenigen Parametern dar\nVerhindere einfaches Merken, fördere Generalisieren\n\nAuswirkungen\n\nNeuronale Netze müssen nach Strukturen, Mustern, Abstraktionen und Verallgemeinerungen suchen\nJe besser diese Komprimierung je grösser das Model, desto „intelligenter“ agieren die LLMs"
+  },
+  {
+    "objectID": "index.html#kis-sind-schlau-und-doof-zugleich",
+    "href": "index.html#kis-sind-schlau-und-doof-zugleich",
+    "title": "KI im Unterricht",
+    "section": "KIs sind schlau und doof zugleich",
+    "text": "KIs sind schlau und doof zugleich\n\n\nHow many Rs are in Strawberry?\n\n\n\nUnd was sagen die KI Modelle?\n\nGPT 4o mini"
+  },
+  {
+    "objectID": "index.html#llms-gehirn",
+    "href": "index.html#llms-gehirn",
+    "title": "KI im Unterricht",
+    "section": "LLMs <> Gehirn?",
+    "text": "LLMs &lt;&gt; Gehirn?\n\n\n\n\nThis study shows that neural activity in the human brain aligns linearly with the internal contextual embeddings of speech and language within large language models (LLMs) as they process everyday conversations.\n\n\nNature Human Behaviour - 2025/03/07 - Goldstone, A., et al. - A unified acoustic-to-speech-to-language embedding space captures the neural basis of natural language processing in everyday conversations"
+  },
+  {
+    "objectID": "index.html#hat-das-euer-verständnis-von-ki-verändert",
+    "href": "index.html#hat-das-euer-verständnis-von-ki-verändert",
+    "title": "KI im Unterricht",
+    "section": "Hat das Euer Verständnis von KI verändert?",
+    "text": "Hat das Euer Verständnis von KI verändert?\n\nJa, vorher hatte ich eine andere Sicht auf KI?"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "KI im Unterricht",
+    "section": "_",
+    "text": "_\n\n\nKI verändert geistiges Arbeiten"
+  },
+  {
+    "objectID": "index.html#erste-untersuchungen-über-kimensch-zusammenarbeit",
+    "href": "index.html#erste-untersuchungen-über-kimensch-zusammenarbeit",
+    "title": "KI im Unterricht",
+    "section": "Erste Untersuchungen über KI/Mensch Zusammenarbeit",
+    "text": "Erste Untersuchungen über KI/Mensch Zusammenarbeit\n\n\n758 consultants\n\n\n4867 software developers\n\n\nsehen 25-40% Zunahme der Produktivität: skales with detached (-), delegating (+) or immersive usage (++)"
+  },
+  {
+    "objectID": "index.html#ki-in-der-forschung",
+    "href": "index.html#ki-in-der-forschung",
+    "title": "KI im Unterricht",
+    "section": "KI in der Forschung",
+    "text": "KI in der Forschung\n\nEin Team von Wissenschaftlern hat eine chemische KI entwickelt, die in der Lage ist, Moleküle zu entwerfen, die auf dem Mars Sauerstoff produzieren könnten. Dazu hat sie Marsproben analysiert und zerlegt, mehr als 3,7 Millionen mögliche Moleküle für die Spaltung von Wasser und die Bildung von Sauerstoff auf dem Roten Planeten identifiziert und die 234 besten Kandidaten durch Synthese charakterisiert. Dies würde etwa 2.000 Jahre menschlicher Arbeit erfordern, schreiben die Autoren der Studie.\n\n\n\n\n\n\nUniversity of Science and Technology of China"
+  },
+  {
+    "objectID": "index.html#ict-arbeitsmarkt",
+    "href": "index.html#ict-arbeitsmarkt",
+    "title": "KI im Unterricht",
+    "section": "ICT Arbeitsmarkt",
+    "text": "ICT Arbeitsmarkt\n\n\nNicole Helmer, Vice President & Global Head of Development Learning bei SAP\nNeben dem unbestreitbaren Bedarf an einer verantwortungsvollen KI-Entwicklung und einer breiten KI-Kompetenz in sämtlichen IT-Berufen müssen alle Mitarbeitenden ihre übergeordneten Fähigkeiten wie kritisches Denken, Kreativität und komplexes Problemlösen verbessern.\n\n \n\n\nStudy: “The Transformational Opportunity of AI on ICT Jobs”: Accenture, Cisco, Eightfold, Google, IBM, Indeed, Intel, Microsoft and SAP."
+  },
+  {
+    "objectID": "index.html#freelancer-market",
+    "href": "index.html#freelancer-market",
+    "title": "KI im Unterricht",
+    "section": "Freelancer Market",
+    "text": "Freelancer Market\n\n\n\nHarvard Business Review: Research: How Gen AI Is Already Impacting the Labor Markets\nAfter the introduction of ChatGPT, there was a 21% decrease in the weekly number of posts in automation-prone jobs compared to manual-intensive jobs. Writing jobs were affected the most (30.37% decrease), followed by software, app, and web development (20.62%) and engineering (10.42%)."
+  },
+  {
+    "objectID": "index.html#körperliche-arbeit",
+    "href": "index.html#körperliche-arbeit",
+    "title": "KI im Unterricht",
+    "section": "körperliche Arbeit",
+    "text": "körperliche Arbeit\n\n\n1900\n\n\n2024\n\n\nals Model der zu erwartenden Transformation für geistige Arbeit?"
+  },
+  {
+    "objectID": "index.html#eure-gedankenbemerkungen",
+    "href": "index.html#eure-gedankenbemerkungen",
+    "title": "KI im Unterricht",
+    "section": "Eure Gedanken/Bemerkungen",
+    "text": "Eure Gedanken/Bemerkungen\n\n\nWie verändert sich die Arbeit in den nächsten 10 Jahren? Eure Vorhersagen?"
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "KI im Unterricht",
+    "section": "_",
+    "text": "_\n\n\nKI im Schulumfeld"
+  },
+  {
+    "objectID": "index.html#chatbots-in-der-bildung",
+    "href": "index.html#chatbots-in-der-bildung",
+    "title": "KI im Unterricht",
+    "section": "Chatbots in der Bildung",
+    "text": "Chatbots in der Bildung\n\n\n Source\n\n\n\n“… unter den untersuchten Schülerinnen und Schülern 73 % [haben] 73 % bereits generative KI für die Text- und/oder Bildgenerierung genutzt.”\nBIDT: März 2024\n\n“…. Auch konkrete Unterrichtskonzepte und -materialien für die Thematisierung der Toolnutzung sind gefragt. Die Ergebnisse dieser Studie [über Deepl/LEO Nutzung] legen nahe, dass es sinnvoll wäre, die Lernenden dieser Stufe im kritischen Umgang mit Übersetzungstools zu schulen, um sie gewinnbringender und lernförderlicher in der fremdsprachigen Kommunikation einzusetzen.”\nBulletin Suisse de Linguistique Appliquee"
+  },
+  {
+    "objectID": "index.html#ki-bots-im-schulumfeld",
+    "href": "index.html#ki-bots-im-schulumfeld",
+    "title": "KI im Unterricht",
+    "section": "KI Bots im Schulumfeld",
+    "text": "KI Bots im Schulumfeld\n\n\nVergleichsstudie an 1000 Lernenden:\nPrüfungsvorbereitung mit und ohne KI Chatbots\n\nUnterschiedliche Hausaufgaben zur Mathe Prüfungsvorbereitung\n\nGruppe 1: Basis - traditionell\nGruppe 2: +48% - ChatGPT\nGruppe 3: +127% - einfacher sokratischer GPT-Tutor (nicht adaptiv)\n\nPrüfung über den Lernstoff\n\nChatGPT Gruppen sind schlechter als die traditionelle Gruppe\nGTP-Tutor Gruppe erzielt gleiche Ergebnisse wie die traditionelle Gruppe"
+  },
+  {
+    "objectID": "index.html#studentinnen-ki",
+    "href": "index.html#studentinnen-ki",
+    "title": "KI im Unterricht",
+    "section": "Student:innen & KI?",
+    "text": "Student:innen & KI?\n\n\n\nAnthropic Education Report: How University Students Use Claude AI\n\n\nStudents primarily use AI systems for creating (using information to learn something new) and analyzing (taking apart the known and identifying relationships), such as creating coding projects or analyzing law concepts. This aligns with higher-order cognitive functions on Bloom’s Taxonomy.\nThis raises questions about ensuring students don’t offload critical cognitive tasks to AI systems.\n\n\n\n\nComparing the percentage of Claude.ai student conversations that are related to an National Center for Education Statistics in 1 Mio dialogues."
+  },
+  {
+    "objectID": "index.html#ki-nutzung",
+    "href": "index.html#ki-nutzung",
+    "title": "KI im Unterricht",
+    "section": "KI Nutzung",
+    "text": "KI Nutzung\nMit KI können wir auf sehr unterschiedliche Weise umgehen.\n\n\nLernende können:\n\nSich Bilden: Sie  erzeugen auf Augenhöhe zusammen mit KI neue Inhalte und Ideen und bauen so Kompetenzen auf\nOptimieren: Sie  automatisieren den Umgang mit Information/Wissen mithilfe von KI\nReproduzieren: Sie übernehmen KI generierte Inhalte ohne dass sie diese verstehen oder hinterfragen"
+  },
+  {
+    "objectID": "index.html#ki-bewusste-pädagogik",
+    "href": "index.html#ki-bewusste-pädagogik",
+    "title": "KI im Unterricht",
+    "section": "KI bewusste Pädagogik",
+    "text": "KI bewusste Pädagogik\n\n\nEs braucht Methodik um die Vorteile von KI pädagogisch zu nutzen. KI: \n\nbringt Kapazität für individuelle Förderung\nermöglicht Schöpfungstiefe durch komplexere Aufgabenstellungen\nfördert Durchdringung durch direkten Start an der Kompetenzgrenze\nzielt auf tiefes Wissen durch Vernetzung von Wissen und Kompetenzen\nmotiviert durch lebensnahes, exploratives Lernen von komplexen Zusammenhängen\n\n\n\n\n\nDALL·E 3: Education as Exploration\n\n\n\nDas bedeutet eine enge Lernbegleitung durch Lehrpersonen und Tools"
+  },
+  {
+    "objectID": "index.html#ansprüche-21-jahrhundert",
+    "href": "index.html#ansprüche-21-jahrhundert",
+    "title": "KI im Unterricht",
+    "section": "Ansprüche 21 Jahrhundert",
+    "text": "Ansprüche 21 Jahrhundert\nDer Kompetenzbegriff nach Weinert\n\nKompetenzen bezeichnen „die bei Individuen verfügbaren oder durch sie erlernbaren kognitiven Fähigkeiten und Fertigkeiten, um bestimmte Probleme zu lösen, sowie die damit verbundenen … Bereitschaften, damit die Problemlösungen in variablen Situationen erfolgreich und verantwortungsvoll genutzt werden können.“\n\n\n\nQuelle: Weinert (Hrsg.) Leistungsmessungen in Schulen; 2001"
+  },
+  {
+    "objectID": "index.html#welche-ki-lernsituationen",
+    "href": "index.html#welche-ki-lernsituationen",
+    "title": "KI im Unterricht",
+    "section": "Welche KI Lernsituationen?",
+    "text": "Welche KI Lernsituationen?\nEine individuelle KI unterstütze Lernsituation kreiert intrinsische Motivation bei den Lernenden, Kompetenzen aufzubauen und zu erproben, und nicht diese zu simulieren.\n\n\nAFS Flugagentur - Leipzig - Markranstädt - Flugsimulator - Airbus A320 - Professional"
+  },
+  {
+    "objectID": "index.html#kurvendiskussion-mit-ki",
+    "href": "index.html#kurvendiskussion-mit-ki",
+    "title": "KI im Unterricht",
+    "section": "Kurvendiskussion mit KI",
+    "text": "Kurvendiskussion mit KI\nWorkshop mit 9. Klässlern\nAufgabe nach kurzer Einführung in prompt engineering:\n\n\nPrompt: Bitte gib mir den Matplotlib code um die function y = x³-3x²-9x+27 zu zeichnen. Verwende das Canvas.\n\nUnd nun beginne einen Dialog über Nullstellen, Extrema, Wendepunkte, … .\nFrage die KI nach was die obigen Begriffe bedeuten.\n\n\n\n\n\nGPT 4o"
+  },
+  {
+    "objectID": "index.html#wir-zeichnen-ein-comic",
+    "href": "index.html#wir-zeichnen-ein-comic",
+    "title": "KI im Unterricht",
+    "section": "Wir zeichnen ein Comic",
+    "text": "Wir zeichnen ein Comic\nWorkshop mit 11. und 12. Klässlern\nNach einer kurzen Einführung in Prompting fürs Comiczeichnen:\n\n\nComic Zeichnen ist richtig aufwendig. ChatGPT kann uns dabei helfen. Die Story muss aber von uns kommen.\n\nStoryline: Die Geschichte in einem Satz.\nStoryboard: Wie sieht die Geschichte aus?\nBildbeschreibung: Was ist auf den einzelnen Bildern zu sehen? Was passiert wenn Du Details weglässt?\nDialoge: Was sagen die Figuren?\nZeichnungen: Zeichne die Bilder.\nZusammenfügen: In einem Graphikprogramm: füge die Bilder und Dialoge zusammen.\n\n\n\n\n\nWas kann man hier besser machen?"
+  },
+  {
+    "objectID": "index.html#aidu-lernbegleitung-12",
+    "href": "index.html#aidu-lernbegleitung-12",
+    "title": "KI im Unterricht",
+    "section": "AIDu-Lernbegleitung 1/2",
+    "text": "AIDu-Lernbegleitung 1/2\nErste Experimente mit 10-12 Klässlern: Allg., Geschichte, Französisch und Physik"
+  },
+  {
+    "objectID": "index.html#aidu-lernbegleitung-22",
+    "href": "index.html#aidu-lernbegleitung-22",
+    "title": "KI im Unterricht",
+    "section": "AIDu-Lernbegleitung 2/2",
+    "text": "AIDu-Lernbegleitung 2/2\nAIDu - pädagogische KI-Lernbegleitung\nForschungsfragen:\n\nLernende sind per se keine kompetente KI Dialogpartner. Wie damit umgehen?\nWie verankern wir Kompetenzen und messen das?\nWie ermöglichen wir erlebte Selbstwirksamkeit?\nWie geben wir Gestaltungsspielraum für Lernende und Lehrende?\nAbgrenzung zu Chatbots, die nur Informationen liefern\n\nKombination von virtuellen Erfahrungsräumen mit KI Lernbegleitung. Dabei begleiten wir die Lernenden in der Erarbeitung von Kompetenzen.\nLink"
+  },
+  {
+    "objectID": "index.html#zusammenfassung",
+    "href": "index.html#zusammenfassung",
+    "title": "KI im Unterricht",
+    "section": "Zusammenfassung",
+    "text": "Zusammenfassung\n\n\n\nKI hat das Potential die Bildung zu revolutionieren\n\noder zu ruinieren\n\nKI Chatbots im Schulumfeld sind Realität\n\nund werden heute (falsch?) genutzt\n\nKI bewusste Pädagogik\n\nist aus unserer Sicht notwendig\n\nKI Lernsysteme können dabei\n\ndie nötigen Resourcen bieten\n\n\n\n\n\n\nDALL·E 3: Education as Exploration"
+  },
+  {
+    "objectID": "index.html#please_vote_id",
+    "href": "index.html#please_vote_id",
+    "title": "KI im Unterricht",
+    "section": "_",
+    "text": "_\n\n\n- Danke für die Aufmerksamkeit -  &gt;/"
+  },
+  {
+    "objectID": "index.html#was-ist-das-problem",
+    "href": "index.html#was-ist-das-problem",
+    "title": "KI im Unterricht",
+    "section": "Was ist das Problem?",
+    "text": "Was ist das Problem?\n\n\nKI im Schulumfeld ist per se nicht förderlich\n\nKI Technologie reduziert Durchdringung\n\nverleitet zu Kompetenzsimulation\nreduziert die Notwendigkeit von Wissen durch schnelle Verfügbarkeit von Information\n\nMiss- und Fehlinformation sind leichter verfüg-/erzeugbar\nChatBots verführen zu Plagiat und Betrug\nFührt zur fehlerhaften Selbsteinschätzung der eigenen Kompetenz\n\nAber KI ist Realität. Daher ist Wegschauen ist keine Lösung!\n\n\n\n\nDALL·E 3: Consumer Education"
+  },
+  {
+    "objectID": "index.html#sprach-ki-ist-etabliert",
+    "href": "index.html#sprach-ki-ist-etabliert",
+    "title": "KI im Unterricht",
+    "section": "Sprach-KI ist etabliert",
+    "text": "Sprach-KI ist etabliert\n\n\nOpenAI hat über 300 Mio wöchentliche Nutzer weltweit. Schweiz:\n\n\n\n DALL·E 3: Social Media Rabbit Hole an AI Application"
+  }
+]

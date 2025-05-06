@@ -1,6 +1,8 @@
-Introduction to ITS research at PH Bern IS2
+# Atelier Studienstiftung
+
+Atelier hold at Studienstiftung workshop on "KI in der Bildung".
 
 
 German Version:
 
-https://wolfgangspahn.github.io/intro-IS2-ITS.github.io# atelier-studienstiftung
+ atelier-studienstiftung
