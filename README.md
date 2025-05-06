@@ -5,4 +5,4 @@ Atelier hold at Studienstiftung workshop on "KI in der Bildung".
 
 German Version:
 
- atelier-studienstiftung
+https://wolfgangspahn.github.io/atelier-studienstiftung/#/title-slide atelier-studienstiftung
